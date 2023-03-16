@@ -229,6 +229,11 @@ body {
   
   
 }
+.cambia_desaparece{
+  transition:all 1s ease-in-out;
+  opacity: 0;
+
+}
 .cambia1{
   left:15%;
   top:3%;
@@ -238,3 +243,44 @@ body {
   top:3%;
 }
 
+.linea{
+  width:80%;
+  height:5px;
+  background: red;
+  border-radius: 5%;
+  position:absolute;
+  z-index:3;
+  animation: tachon 3s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 1s ease-in-out;
+
+}
+@keyframes tachon {
+  0%{
+    transform: scaleX(0);
+  
+  }
+  35%{
+    transform: scaleX(1);
+    
+  }
+  65%{
+    transform: scaleX(1);
+    
+  }
+  100%{
+    transform: scaleX(0);
+    
+  }
+  
+}
+.t1{
+  top:44%;
+}
+.t2{
+  top:62%;
+}
+.t3{
+  top:80%;
+}
